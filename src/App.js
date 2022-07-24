@@ -27,7 +27,7 @@ function App() {
       return (
         <div className='main-container'>
           <div className='header'>
-            <h1>Elelctronics.</h1>
+            <h1>Electronics.</h1>
             <p>Here are the products listed based on their popularity</p>
           </div>
             
