@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/smartservproj/static/css/main.e9e62e04.css",
+    "main.js": "/smartservproj/static/js/main.49a1dc9a.js",
+    "index.html": "/smartservproj/index.html",
+    "main.e9e62e04.css.map": "/smartservproj/static/css/main.e9e62e04.css.map",
+    "main.49a1dc9a.js.map": "/smartservproj/static/js/main.49a1dc9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9e62e04.css",
+    "static/js/main.49a1dc9a.js"
+  ]
+}
