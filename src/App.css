@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loader{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    background: black;
+    color: white;
+    font-size: 2rem;
+    padding: 5rem 12rem;
+   
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header *{
+    margin-top: 0;
+    margin-bottom: 0;
 }
-
-.App-link {
-  color: #61dafb;
+.header p{
+    font-size: 1rem;
 }
+#all-products-container{
+    padding: 2rem 12rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.one-product-container{
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.product-title{
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-top: 0.2rem;
+}
+.product-category{
+    background-color: #B1CFB0;
+    font-size: small;
+    border-radius: 25px;
+    padding: 0 10px;
+    width: fit-content;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.product-category.tablet{
+    background-color: lavender;
+}
+.product-price{
+    font-size: 1.5em;
+    padding-top: 1.5em;
+    display: flex;
+    align-items: flex-end;
+}
+.product-price span{
+    
+    font-size: small;
+}
+@media screen and (max-width:400px) {
+    .header{
+        padding: 3rem 2rem;
+        font-size: 1.2em;
+    }
+    #all-products-container{
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 1rem;
+    }
+    .product-price{
+        font-size: 1.5em;
+        padding-top: 1rem;
+    }
+    
 }
